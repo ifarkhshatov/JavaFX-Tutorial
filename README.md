@@ -123,7 +123,7 @@ There you could see the ``initialize()``. From this method we can drop warnings 
  }
 ```  
 
-![itworks](screens/sout_itworks.png)
+![itworks](screens/sout_itworks.PNG)
 
 You might notice the red warning. This is because of compitability issues of JavaFX. Just go to **.fxml** file in **AnchorPane** and replace ``xmlns="http://javafx.com/javafx/15.0.1"`` to which version it asks (``xmlns="http://javafx.com/javafx/11.0.2"``)
 
