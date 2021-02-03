@@ -19,35 +19,35 @@ Then you unzip in your chosen directory. You will source this for each JavaFX pr
 ```
 Instead of *\javafx-sdk-11.0.2\lib* you need to set your own directory of JavaFX lib folder.
 
-4.  Run (shift + f10) Main.java and you will see this window if you do all these steps correctly.  
-![empty_window](screens\empty_window.PNG)
+4.  Run (shift + f10) Main.java and you will see this window if you do all these steps correctly.   
+![empty_window](screens/empty_window.PNG)
 
 ## Build a JavaFX app with SceneBuilder
-For the sake of simplicity, I will build a simple currency converter app which will use API.  
+For the sake of simplicity, I will build a simple currency converter app which will use API.   
 ![example](screens/example.png)
 1.	Open SceneBuilder
 2.	Choose **Open Project**
 3.	Find in a directory of the app (in src folder) **.fxml** file and open it
-4.	For the moment we will drop default GridPane (0x0)  
+4.	For the moment we will drop default GridPane (0x0)    
 ![gridpane](screens/GridPane.png)
-5.	Drag AnchorPane and move to the main screen. This is the main window of our application.  
+5.	Drag AnchorPane and move to the main screen. This is the main window of our application.    
 ![anchorpane](screens/AcnhorPane.PNG)
 6.	We can adjust the size of the window as well as colour and style if you are familiar with *CSS*
-7.	We can use the search window to quickly find an object, for example, “Text”. Drag to the main screen and adjust the size of Text area and styling.
+7.	We can use the search window to quickly find an object, for example, “Text”. Drag to the main screen and adjust the size of Text area and styling.  
 ![text_style](screens/Properties.PNG)
-8.	Then keep filling like you wish the App. And at the end, the layout should look similar to this:
+8.	Then keep filling like you wish the App. And at the end, the layout should look similar to this:  
 ![final_layout](screens/final_layout.png)  
 
 You now can preview the app, go to **[Preview]** -> **[Show Preview in Window]** or simply *Ctrl+P*
 Now steps to use this template in our app as well as set-up IDs for further uses.
-1.	To further use an object in code and provide the reactivity for that we need to set **fx:id**. Select the object and on the right side of the SceneBuilder click tab **[Code]**. You will see the **fx:id** fill the id of the object. Place IDs for other objects.
+1.	To further use an object in code and provide the reactivity for that we need to set **fx:id**. Select the object and on the right side of the SceneBuilder click tab **[Code]**. You will see the **fx:id** fill the id of the object. Place IDs for other objects.  
 ![fx_id](screens/fx_id.png)
-2.	I built three empty text objects and assign **fx:id** for them to display the information about currency rate; conversion and date when button “Convert” is clicked.
+2.	I built three empty text objects and assign **fx:id** for them to display the information about currency rate; conversion and date when button “Convert” is clicked.  
 ![empty_text](screens/empty_text.png)
 3.	After previous steps, we save the changes (Ctrl + S) it will replace **.fxml** layout to our built layout in SceneBuilder.
-4.	In button left side click **[Controller]** and in field **[Contoller class]** and provide the root to Controller.java. For example **[sample.Controller]**
+4.	In button left side click **[Controller]** and in field **[Contoller class]** and provide the root to Controller.java. For example **[sample.Controller]**  
 ![fx_id](screens/fx_id.png)
-5.	Finally, we need to click **[View]** -> **[Show Sample Controller Skeleton]** -> click in right button **[Full]** then Copy and paste in the app directory *Controller.java*
+5.	Finally, we need to click **[View]** -> **[Show Sample Controller Skeleton]** -> click in right button **[Full]** then Copy and paste in the app directory *Controller.java*  
 ![skeleton](screens/skeleton.png)
 I got something like this:
 ```Java
@@ -121,7 +121,8 @@ There you could see the ``initialize()``. From this method we can drop warnings 
     System.out.println("IT WORKS!");
     });
  }
-```
+```  
+
 ![itworks](screens/sout_itworks.png)
 
 You might notice the red warning. This is because of compitability issues of JavaFX. Just go to **.fxml** file in **AnchorPane** and replace ``xmlns="http://javafx.com/javafx/15.0.1"`` to which version it asks (``xmlns="http://javafx.com/javafx/11.0.2"``)
@@ -187,11 +188,13 @@ And finally if it works then you can convert any currency and amount you would l
 
 ## Build a self contained .exe file
 If everything works then we can finally build our application as .exe file to use it without IDE.
-1. Go to **[File]** -> **[Project Structure…]** *or Ctr+Alt+Shift+S* -> **[Project]** -> set Project as 1.8 and project language level as 8 ![java8](screens/java8.png)
+1. Go to **[File]** -> **[Project Structure…]** *or Ctr+Alt+Shift+S* -> **[Project]** -> set Project as 1.8 and project language level as 8   ![java8](screens/java8.png)
 2. Go to **[Artifacts]** -> **+ Add** or Alt+Insert -> **JavaFX Application** -> **From module..**.
-3. In output tab move JSON jar and lib from JavaFX to the left into .jar of your project ![Artifacts](screens/Artifacts.PNG)
+3. In output tab move JSON jar and lib from JavaFX to the left into .jar of your project  ![Artifacts](screens/Artifacts.PNG)
 4. Go to tab **Java FX** in **Application class:** set your main class or click folder icon and choose, for example *sample.Main*, in **Native bundle:** choose all option and press ok.
 5. Go to **[Build]** -> **[Build Artifacts..]**
 
-If there is no errors it should create in **out.artifacts** folder bundle. Go there and you will the last folder where is .exe file. You can move this folder out of directory and it can works without IDE. ![exe](screens/exe1.png)
+If there is no errors it should create in **out.artifacts** folder bundle. Go there and you will the last folder where is .exe file. You can move this folder out of directory and it can works without IDE.  
+ ![exe](screens/exe1.png)  
+ 
 ![exe2](screens/exe2.png)
