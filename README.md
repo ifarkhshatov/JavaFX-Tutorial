@@ -29,7 +29,7 @@ For the sake of simplicity, I will build a simple currency converter app which w
 2.	Choose **Open Project**
 3.	Find in a directory of the app (in src folder) **.fxml** file and open it
 4.	For the moment we will drop default GridPane (0x0)    
-![gridpane](screens/GridPane.PNG)
+![gridpane](screens/GridPane.png)
 5.	Drag AnchorPane and move to the main screen. This is the main window of our application.    
 ![anchorpane](screens/AcnhorPane.PNG)
 6.	We can adjust the size of the window as well as colour and style if you are familiar with *CSS*
