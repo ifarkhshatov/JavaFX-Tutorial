@@ -44,9 +44,9 @@ Now steps to use this template in our app as well as set-up IDs for further uses
 ![fx_id](screens/fx_id.PNG)
 2.	I built three empty text objects and assign **fx:id** for them to display the information about currency rate; conversion and date when button “Convert” is clicked.  
 ![empty_text](screens/empty_text.PNG)
-3.	After previous steps, we save the changes (Ctrl + S) it will replace **.fxml** layout to our built layout in SceneBuilder.
-4.	In button left side click **[Controller]** and in field **[Contoller class]** and provide the root to Controller.java. For example **[sample.Controller]**  
+3.	In button left side click **[Controller]** and in field **[Contoller class]** and provide the root to Controller.java. For example **[sample.Controller]**  
 ![fx_id](screens/fx_id.PNG)
+4.	After previous steps, we save the changes (Ctrl + S) it will replace **.fxml** layout to our built layout in SceneBuilder.
 5.	Finally, we need to click **[View]** -> **[Show Sample Controller Skeleton]** -> click in right button **[Full]** then Copy and paste in the app directory *Controller.java*  
 ![skeleton](screens/skeleton.PNG)
 I got something like this:
